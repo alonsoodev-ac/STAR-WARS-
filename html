@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Star Wars</title>
+</head>
+
+<body
+    class="min-h-screen text-yellow-300 bg-cover bg-center bg-fixed"
+   style="background-image: url('https://www.shutterstock.com/image-illustration/abstract-glowing-light-rays-background-600nw-2357414009.jpg');"
+>
+    <div class="container mx-auto p-6">
+
+        <div class="rounded-3xl p-6 backdrop-blur-sm">
+
+            <h1
+                class="text-7xl md:text-8xl font-extrabold text-center tracking-wider mb-6"
+                style="
+                    color: #f7d354;
+                    text-shadow:
+                    3px 3px 0 #c08f14,
+                    6px 6px 10px rgba(19, 110, 213, 0.8);
+                "
+            >
+                STAR WARS
+            </h1>
+
+            <p class="text-center text-sm text-slate-300 mb-8 tracking-wide">
+                PERSONAJES DE LA GALAXIA
+            </p>
+
+            <div id="character-list" class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            </div>
+
+            <div class="flex justify-center gap-4 mt-8">
+
+                <button
+                    id="prev-btn"
+                    class="bg-yellow-400 px-5 py-2 rounded-xl shadow font-bold text-black cursor-pointer hover:bg-yellow-500"
+                >
+                    Anterior
+                </button>
+
+                <button
+                    id="next-btn"
+                    class="bg-yellow-400 px-5 py-2 rounded-xl shadow font-bold text-black cursor-pointer hover:bg-yellow-500"
+                >
+                    Siguiente
+                </button>
+
+            </div>
+
+            <!-- COMPARACIÓN -->
+            <div id="comparison" class="mt-10">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
